@@ -111,3 +111,41 @@ p{
     font-size: 20px;
     font-weight: 400;
 }
+#our-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    ". head head head ."
+    ". website-ui re-design application-ui ."
+    ". mobile-app-ui web-app-ui web-elements ."
+    ;
+}
+.service-box{
+    background-color: red;
+    width: 100%;
+    height: 400px;
+}
+#head{
+    grid-area: head;
+}
+#website-ui{
+    grid-area: website-ui;
+}
+#re-design{
+    grid-area: re-design;
+}
+#application-ui{
+    grid-area: application-ui;
+}
+#mobile-app-ui{
+    grid-area: mobile-app-ui;
+}
+#web-app-ui{
+    grid-area: web-app-ui;
+}
+#web-elements{
+    grid-area: web-elements;
+}

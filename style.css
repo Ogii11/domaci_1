@@ -1,0 +1,68 @@
+*{
+    font-size: 16px;
+    font-family: Lato;
+}
+html{
+    margin: 0px;
+}
+header{
+    display: flex;
+    height: 415px;
+    justify-content: space-evenly;
+}
+#logo{
+    flex-grow: 3;
+    text-align: center;
+    margin: 4.5% 0;
+}
+#logo h3{
+    color: #4b647e;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 28px;
+    display: inline;
+}
+#logo span{
+    color: #3d37f1;
+    font-weight: 700;
+    font-size: 32px;
+}
+#nav-background{
+    background-image: url("./res/images/background header.png");
+    background-repeat: no-repeat;
+    flex-grow: 5;
+}
+#header-nav ul{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-nav ul li{
+    
+    float: right;
+    list-style: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+#login{
+    margin-left: -25px;
+    text-align: center;
+    width: 214px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #ff8923;
+}
+#login span{
+    vertical-align: middle;
+    padding-top: 23%;
+}
+#wave-btn{
+    width: 264px;
+    height: 77px;
+    border-radius: 38px;
+    background-color: #3d37f1;
+    box-shadow: 0px 10px 550px -5px #3d37f1;
+}

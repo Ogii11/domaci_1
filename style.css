@@ -5,9 +5,15 @@
 html{
     margin: 0px;
 }
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
 header{
     display: flex;
-    height: 415px;
+    height: 400px;
     justify-content: space-evenly;
 }
 #logo{
@@ -54,15 +60,54 @@ header{
     height: 72px;
     border-radius: 36px;
     background-color: #ff8923;
+    box-shadow: 0px 5px 50px -5px #ff8923;
 }
 #login span{
     vertical-align: middle;
     padding-top: 23%;
 }
 #wave-btn{
-    width: 264px;
-    height: 77px;
+    width: 204.8px;
+    height: 61.6px;
     border-radius: 38px;
     background-color: #3d37f1;
-    box-shadow: 0px 10px 550px -5px #3d37f1;
+    box-shadow: 0px 10px 50px -5px #3d37f1;
+    border: none;   
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Poppins;
+}
+#wave-btn-position{
+    margin-left: 31%;
+    margin-right: 0px;
+    margin-top: 70px;
+}
+#home_1{
+    display: flex;
+}
+.side-by-side-left{
+    flex-grow: 1;
+}
+.side-by-side-right{
+    flex-grow: 1;
+}
+.heading{
+    color: #534d4d;
+    font-family: Lato;
+    font-size: 68px;
+    font-weight: 700;
+    margin-left: 30%;
+}
+.side-by-side-left p{
+    margin-left: 30%;
+}
+.side-by-side-right img{
+    scale: 0.8;
+}
+/* MOZDA BUDE GRESKA*/
+p{
+    color: #534d4d;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
 }

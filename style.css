@@ -23,7 +23,6 @@ header{
 }
 #logo h3{
     color: #4b647e;
-    font-family: Lato;
     font-size: 32px;
     font-weight: 300;
     line-height: 28px;
@@ -104,13 +103,13 @@ header{
 .side-by-side-right img{
     scale: 0.8;
 }
-/* MOZDA BUDE GRESKA*/
-p{
+.side-by-side-left p{
     color: #534d4d;
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
 }
+                        /* Our services*/
 #our-services{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -122,30 +121,87 @@ p{
     ". website-ui re-design application-ui ."
     ". mobile-app-ui web-app-ui web-elements ."
     ;
+    background-color: #fbfcfd;
+    margin-bottom: 150px;
 }
 .service-box{
-    background-color: red;
     width: 100%;
-    height: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
 }
 #head{
     grid-area: head;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
 }
 #website-ui{
     grid-area: website-ui;
+    background-image: linear-gradient(0deg, #dfa871, #fab977);
+
 }
 #re-design{
     grid-area: re-design;
+    background-image: linear-gradient(0deg, #2394b8, #41e9e2);
 }
 #application-ui{
     grid-area: application-ui;
+    background-image: linear-gradient(0deg, #473865, #69529f);
 }
 #mobile-app-ui{
     grid-area: mobile-app-ui;
+    background-image: linear-gradient(0deg, #0962c5,#4285d2);
 }
 #web-app-ui{
     grid-area: web-app-ui;
+    background-image: linear-gradient(0deg, #564fd6,#a4a1f6);
 }
 #web-elements{
     grid-area: web-elements;
+    background-image: linear-gradient(0deg, #9a4242,#fe8088);
+}
+#head h3{
+    color: #3d37f1;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 20px;
+}
+#head h2{
+    color: #5a5454;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 400;
+}
+#head pre{
+    color: #747474;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+.read-more-btn{
+    width: 131px;
+    height: 45px;
+    border-radius: 23px;
+    background-color: #ffffff;
+    border: none;
+}
+.service-box-img{
+    flex: 5;
+    position: relative;
+    top: 20%;
+}
+.service-box-heading{
+    flex: 1;
+}
+.service-box-heading h3{
+    font-size: 22px;
+}
+.service-box-text{
+    flex: 2;
+}
+.service-box-btn{
+    flex: 2;
 }

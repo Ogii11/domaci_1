@@ -122,7 +122,7 @@ header{
     ". mobile-app-ui web-app-ui web-elements ."
     ;
     background-color: #fbfcfd;
-    margin-bottom: 150px;
+    padding-bottom: 100px;
 }
 .service-box{
     width: 100%;
@@ -204,4 +204,18 @@ header{
 }
 .service-box-btn{
     flex: 2;
+}
+#fill-1{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#fill-1 div:nth-child(1){
+    text-align: right;
+    flex: 1;
+}
+#fill-1 div:nth-child(2){
+    flex: 1; 
+    margin-left: 5%;
+    margin-top: 10%;
 }

@@ -224,6 +224,7 @@ header{
     justify-content: center;
     background-color: #f8f8f8;
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 #portfolio-menu{
     flex: 2;
@@ -273,4 +274,72 @@ header{
 }
 #portfolio-galery img {
     width: 100%;
+}
+/*#portfolio-2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". head head head ."
+    ". box1 box2 box3 ."
+    ;
+    padding: 200px 20px;
+}*/
+#portfolio-2{
+    display: flex;
+    flex-direction: column;
+    padding: 200px 20px;
+}
+#portfolio-2-head{
+    grid-area: head;
+    text-align: center;
+}
+#portfolio-2-head h2{
+    font-size: 30px;
+}
+#portfolio-2-boxes{
+    display: flex;
+    justify-content: center;
+}
+#portfolio-2-box1{
+    grid-area: box1;
+}
+#portfolio-2-box2{
+    grid-area: box2;
+}
+#portfolio-2-box3{
+    grid-area: box3;
+}
+.portfolio-2-box{
+    text-align: center;
+    box-shadow: 0 40px 40px rgba(197, 195, 249, 0.15);
+    border-radius: 45px;
+    background-color: #ffffff;
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+}
+#portfolio-2-box1 button{
+    background-image: linear-gradient(135deg, #ad92fc,#6752f3);
+}
+#portfolio-2-box2 button{
+    background-image: linear-gradient(135deg, #ff93a5,#ff64a3);
+}
+#portfolio-2-box3 button{
+    background-image: linear-gradient(135deg, #fbc6a0,#ff8b4e);
+}
+.portfolio-2-box button{
+    border: none;
+    width: 185px;
+    height: 185px;
+    border-radius: 45px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.portfolio-2-box h3{
+    margin-top: 100px;
 }

@@ -420,12 +420,111 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 135px 0 95px 0;
 }
 .fill-2-box{
     position: relative;
+    width: 370px;
+    height: 417px;
+    box-shadow: 0 40px 40px rgba(197, 195, 249, 0.15);
+    border-radius: 20px;
+    margin: 0 20px;
 }
-.fill-2 
 .fill-2-imgs{
     position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: -1;
+}
+.fill-2-box-1{
+    background-color: #131b7ce6;
+}
+.fill-2-box-2{
+    background-color: #f36f21de;;
+}
+.fill-2-box-3{
+    background-color: #a5a2f6c9;
+}
+.fill-2-text{
+    width: max-content;
+    margin: 0px auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fill-2-text p{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 26px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+.fill-2-text h3{
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.our-workflow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
+    background-color: #f8f8f8;
+}
+.procedure-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.procedure-list > div:nth-child(1){
+    grid-column: 1 / 3;
+}
+.procedure div{
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 58px;
+    height: 40.6px;
+    grid-row: 1 / 3;
+    margin-top: 35%;
+    text-align: center;
+    padding-top: 17.4px;
+    color: #ffffff;
+}
+.procedure{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.procedure h5{
+    margin-bottom: 0px;
+}
+.procedure p{
+    margin-top: 0px;
+}
+.procedure1 div{
+    background-color: #3d37f1;
+}
+.procedure2 div{
+    background-color: #9997df;
+}
+.procedure3 div{
+    background-color: #ffba3f;
+}
+.procedure4 div{
+    background-color: #e66e6e;
+}
+.procedure5 div{
+    background-color: #66659f;
+}
+.procedure6 div{
+    background-color: #f17637;
+}
+.procedure7 div{
+    background-color: #37f1be;
+}
+.procedure8 div{
+    background-color: #f137e5;
+}
+.procedure9 div{
+    background-color: #f13d37;
 }

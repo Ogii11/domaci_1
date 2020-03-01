@@ -15,6 +15,7 @@ header{
     display: flex;
     height: 400px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 #logo{
     flex-grow: 3;
@@ -83,6 +84,7 @@ header{
 }
 #home_1{
     display: flex;
+    flex-wrap: wrap;
 }
 .side-by-side-left{
     flex-grow: 1;
@@ -102,6 +104,7 @@ header{
 }
 .side-by-side-right img{
     scale: 0.8;
+    max-width: 100%;
 }
 .side-by-side-left p{
     color: #534d4d;
@@ -117,7 +120,7 @@ header{
     grid-row-gap: 50px;
     grid-column-gap: 20px;
     grid-template-areas: 
-    ". head head head ."
+    "head head head head head"
     ". website-ui re-design application-ui ."
     ". mobile-app-ui web-app-ui web-elements ."
     ;
@@ -175,7 +178,7 @@ header{
     font-size: 40px;
     font-weight: 400;
 }
-#head pre{
+#head p{
     color: #747474;
     font-family: Roboto;
     font-size: 18px;
@@ -209,6 +212,9 @@ header{
     display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+#fill-1 div:nth-child(1) img{
+    width: 100%;
 }
 #fill-1 div:nth-child(1){
     text-align: right;
@@ -428,7 +434,7 @@ header{
     height: 417px;
     box-shadow: 0 40px 40px rgba(197, 195, 249, 0.15);
     border-radius: 20px;
-    margin: 0 20px;
+    margin: 20px 20px;
 }
 .fill-2-imgs{
     position: absolute;
@@ -471,6 +477,7 @@ header{
     align-items: flex-start;
     padding: 100px 0;
     background-color: #f8f8f8;
+    flex-wrap: wrap;
 }
 .procedure-list{
     display: grid;
@@ -584,8 +591,60 @@ header{
     margin: 100px 0 50px 35px;
 }
 .our-blog-logos{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.sponsored-logos{
+.our-blog-logos img{
     margin: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+.fpart-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+.social-networks{
+    display: flex;
+}
+.fpart-2{
+    display: flex;
+    flex-direction: column;
+}
+.fpart-3{
+    display: flex;
+    flex-direction: column;
+}
+.fpart-4{
+    display: flex;
+    flex-direction: column;
+}
+.text-and-icon{
+    display: flex;
+}
+i{
+    margin: 15px;
+}
+.fpart-1 h2 span{
+    color: #3d37f1;
+    font-weight: bold;
+    font-size: 32px;
+}
+.fpart-1 h2{
+    font-size: 32px;
+}
+footer div:nth-child(n+1) h2{
+    font-family: Roboto;
+    font-size: 24px;
+}
+.fpart-1 p:nth-child(4){
+    margin-top: 100px;
 }

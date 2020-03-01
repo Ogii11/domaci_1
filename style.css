@@ -528,3 +528,64 @@ header{
 .procedure9 div{
     background-color: #f13d37;
 }
+.our-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.our-blog-head{
+    text-align: center;
+}
+.our-blog-head h2{
+    font-size: 40px;
+}
+.our-blog-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.our-blog-content div {
+    box-shadow: 0 40px 40px rgba(197, 195, 249, 0.15);
+    margin: 100px 21px;
+}
+.our-blog-content div p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+.our-blog-content div p:nth-child(3){
+    font-family: Roboto;
+    font-size: 15px;
+}
+.our-blog-box-1 p:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.our-blog-box-1 p:nth-child(3){
+    margin: 0 35px;
+}
+.our-blog-box-2 p:nth-child(2){
+    margin-top: 48px;
+    margin-left: 35px;
+}
+.our-blog-box-2 p:nth-child(3){
+    margin: 0px 35px;
+}
+.our-blog-box-3 p:nth-child(2){
+    margin-top: 38px;
+    margin-left: 35px;
+}
+.our-blog-box-3 p:nth-child(3){
+    margin: 0px 35px;
+}
+.our-blog-arrow{
+    margin: 100px 0 50px 35px;
+}
+.our-blog-logos{
+
+}
+.sponsored-logos{
+    margin: 20px;
+}

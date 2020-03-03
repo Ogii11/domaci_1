@@ -26,8 +26,8 @@ function portfolioPhotos(y){
             var gridName = "img" + i;
             document.getElementById(idName).style.gridArea = gridName; 
         }
-        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr 1fr 1fr";
-        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img2 .""img3 img4 .""img5 img6 ."';
+        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr 1fr";
+        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img2 ""img3 img4 ""img5 img6 "';
     }
     else if(x == "Minimal Design"){
         classRemover();
@@ -38,8 +38,8 @@ function portfolioPhotos(y){
             var gridName = "img" + i;
             document.getElementById(idName).style.gridArea = gridName; 
         }
-        document.getElementById("portfolio-galery").style.gridTemplateColumns = "25% 25% 50%";
-        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img1 .""img1 img1 .""img2 img2 .""img2 img2 ."';
+        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr";
+        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 ""img2"';
     }
     else if(x == "Colorful Design"){
         classRemover();
@@ -50,8 +50,8 @@ function portfolioPhotos(y){
             var gridName = "img" + i;
             document.getElementById(idName).style.gridArea = gridName; 
         }
-        document.getElementById("portfolio-galery").style.gridTemplateColumns = "25% 25% 50%";
-        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img1 .""img1 img1 .""img2 img2 .""img2 img2 ."';
+        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr";
+        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 ""img2"';
     }
     else if(x == "Landing Page Design"){
         classRemover();
@@ -62,16 +62,16 @@ function portfolioPhotos(y){
             var gridName = "img" + i;
             document.getElementById(idName).style.gridArea = gridName; 
         }
-        document.getElementById("portfolio-galery").style.gridTemplateColumns = "25% 25% 50%";
-        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img1 .""img1 img1 .""img2 img2 .""img2 img2 ."';
+        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr";
+        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 ""img2"';
     }
     else if(x == "Mobile Apps Design"){
         classRemover();
         y.classList.add("selected-portfolio-btn");
         document.getElementById("portfolio-galery").innerHTML = '<img src='+portfolioPhoto3+' alt="photo3" id="photo1">';
         document.getElementById("photo1").style.gridArea = "img1"; 
-        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr 1fr 2fr";
-        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 img1 .""img1 img1 ."". . ."';
+        document.getElementById("portfolio-galery").style.gridTemplateColumns = "1fr";
+        document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 "';
     }
 }
 portfolioPhotos(document.getElementsByClassName("selected-portfolio-btn")[0]);

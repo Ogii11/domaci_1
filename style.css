@@ -17,35 +17,36 @@ header{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#logo{
+.logo{
     flex-grow: 3;
     text-align: center;
     margin: 4.5% 0;
 }
-#logo h3{
+.logo h3{
     color: #4b647e;
     font-size: 32px;
     font-weight: 300;
     line-height: 28px;
     display: inline;
 }
-#logo span{
+.logo span{
     color: #3d37f1;
     font-weight: 700;
     font-size: 32px;
 }
-#nav-background{
+.nav-background{
     background-image: url("./res/images/background header.png");
     background-repeat: no-repeat;
     flex-grow: 5;
 }
-#header-nav ul{
+.header-nav ul{
     margin-top: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-#header-nav ul li{
+.header-nav ul li{
     
     float: right;
     list-style: none;
@@ -53,7 +54,7 @@ header{
     font-weight: 700;
     color: #ffffff;
 }
-#login{
+.login{
     margin-left: -25px;
     text-align: center;
     width: 214px;
@@ -62,11 +63,11 @@ header{
     background-color: #ff8923;
     box-shadow: 0px 5px 50px -5px #ff8923;
 }
-#login span{
+.login span{
     vertical-align: middle;
     padding-top: 23%;
 }
-#wave-btn{
+.wave-btn{
     width: 204.8px;
     height: 61.6px;
     border-radius: 38px;
@@ -77,17 +78,17 @@ header{
     font-weight: 400;
     font-family: Poppins;
 }
-#wave-btn-position{
+.wave-btn-position{
     margin-left: 31%;
     margin-right: 0px;
     margin-top: 70px;
 }
-#home_1{
+.home_1{
     display: flex;
     flex-wrap: wrap;
 }
 .side-by-side-left{
-    flex-grow: 1;
+    flex: 2;
 }
 .side-by-side-right{
     flex-grow: 1;
@@ -97,10 +98,7 @@ header{
     font-family: Lato;
     font-size: 68px;
     font-weight: 700;
-    margin-left: 30%;
-}
-.side-by-side-left p{
-    margin-left: 30%;
+    margin-left: 20%;
 }
 .side-by-side-right img{
     scale: 0.8;
@@ -111,11 +109,13 @@ header{
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
+    margin-left: 20%;
 }
                         /* Our services*/
-#our-services{
+.our-services{
+    margin: 0 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 353px 353px 353px 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -135,50 +135,50 @@ header{
     text-align: center;
     color: #ffffff;
 }
-#head{
+.head{
     grid-area: head;
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
 }
-#website-ui{
+.website-ui{
     grid-area: website-ui;
     background-image: linear-gradient(0deg, #dfa871, #fab977);
 
 }
-#re-design{
+.re-design{
     grid-area: re-design;
     background-image: linear-gradient(0deg, #2394b8, #41e9e2);
 }
-#application-ui{
+.application-ui{
     grid-area: application-ui;
     background-image: linear-gradient(0deg, #473865, #69529f);
 }
-#mobile-app-ui{
+.mobile-app-ui{
     grid-area: mobile-app-ui;
     background-image: linear-gradient(0deg, #0962c5,#4285d2);
 }
-#web-app-ui{
+.web-app-ui{
     grid-area: web-app-ui;
     background-image: linear-gradient(0deg, #564fd6,#a4a1f6);
 }
-#web-elements{
+.web-elements{
     grid-area: web-elements;
     background-image: linear-gradient(0deg, #9a4242,#fe8088);
 }
-#head h3{
+.head h3{
     color: #3d37f1;
     font-family: Lato;
     font-weight: 700;
     font-size: 20px;
 }
-#head h2{
+.head h2{
     color: #5a5454;
     font-family: Lato;
     font-size: 40px;
     font-weight: 400;
 }
-#head p{
+.head p{
     color: #747474;
     font-family: Roboto;
     font-size: 18px;
@@ -208,47 +208,39 @@ header{
 .service-box-btn{
     flex: 2;
 }
-#fill-1{
+.fill-1{
     display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 }
-#fill-1 div:nth-child(1) img{
+.fill-1 div:nth-child(1) img{
     width: 100%;
 }
-#fill-1 div:nth-child(1){
+.fill-1 div:nth-child(1){
     text-align: right;
-    flex: 1;
+    flex-grow: 1;
 }
-#fill-1 div:nth-child(2){
-    flex: 1; 
+.fill-1 div:nth-child(2){
+    flex-grow: 1; 
     margin-left: 5%;
     margin-top: 10%;
 }
-#portfolio{
+.portfolio{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     background-color: #f8f8f8;
     padding-top: 200px;
     padding-bottom: 200px;
     flex-wrap: wrap;
 }
 #portfolio-menu{
-    flex: 2;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 20%;
+    padding-left: 18%;
 }
 #portfolio-galery{
-    flex: 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "img1 img2 ."
-        "img3 img4 ."
-        "img5 img6 ."
-    ;
     grid-row-gap: 34px;
     grid-column-gap: 30px;
 }
@@ -283,19 +275,19 @@ header{
     width: 100%;
 }
 
-#portfolio-2{
+.portfolio-2{
     display: flex;
     flex-direction: column;
     padding: 200px 20px;
 }
-#portfolio-2-head{
+.portfolio-2-head{
     grid-area: head;
     text-align: center;
 }
-#portfolio-2-head h2{
+.portfolio-2-head h2{
     font-size: 30px;
 }
-#portfolio-2-boxes{
+.portfolio-2-boxes{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -309,13 +301,13 @@ header{
     height: 340px;
     margin: 10px;
 }
-#portfolio-2-box1 button{
+.portfolio-2-box1 button{
     background-image: linear-gradient(135deg, #ad92fc,#6752f3);
 }
-#portfolio-2-box2 button{
+.portfolio-2-box2 button{
     background-image: linear-gradient(135deg, #ff93a5,#ff64a3);
 }
-#portfolio-2-box3 button{
+.portfolio-2-box3 button{
     background-image: linear-gradient(135deg, #fbc6a0,#ff8b4e);
 }
 .portfolio-2-box button{
@@ -333,34 +325,35 @@ header{
 .portfolio-2-box h3{
     margin-top: 100px;
 }
-#about-us-container{
+.about-us-container{
     background-image: url("./res/images/about-us-background.png");
     background-repeat: no-repeat;
     padding-top: 125px;
     padding-bottom: 130px;
+    background-size: cover;
 }
-#about-us{
+.about-us{
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
-#about-us h2{
+.about-us h2{
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 0px;
 }
-#about-us p:nth-child(2){
+.about-us p:nth-child(2){
     color: rgba(255, 255, 255, 0.24);
     font-family: Roboto;
     font-size: 18px;
 }
-#about-us-member{
+.about-us-member{
     margin-top: 160px;
 }
-#about-us-member div{
+.about-us-member div{
     width: 47px;
     height: 47px;
     background-color: #ff992e;
@@ -372,47 +365,47 @@ header{
     bottom: 30px;
     left: 80px;
 }
-#about-us p:nth-child(4){
+.about-us p:nth-child(4){
     color: #d6d6d6;
     font-family: Roboto;
     text-align: center;
 }
-#about-us h3{
+.about-us h3{
     color: #8f8bff;
     font-family: Roboto;
     font-size: 24px;
 }
-#about-us h4{
+.about-us h4{
     color: #d6d6d6;
     font-family: Roboto;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 150px;
 }
-#about-us hr{
+.about-us hr{
     width: 100%;
     color: #323760;
     opacity: 0.33;
 }
-#about-us h5{
+.about-us h5{
     color: rgba(255, 255, 255, 0.24);
     font-family: Roboto;
     font-size: 18px;
     align-self: flex-start;
     margin-top: 50px;
 }
-#about-us-section2{
+.about-us-section2{
     align-self: flex-start;
     width: 100%;
     position: relative;
 }
-#about-us-section2 p{
+.about-us-section2 p{
     color: #ffffff;
     font-family: Roboto;
     font-size: 39px;
     margin: 0;
 }
-#about-us-section2 button{
+.about-us-section2 button{
     width: 322px;
     height: 84px;
     border-radius: 38px;
@@ -422,7 +415,7 @@ header{
     top: 0px;
     right: 0px;
 }
-#fill-2{
+.fill-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -647,4 +640,90 @@ footer div:nth-child(n+1) h2{
 }
 .fpart-1 p:nth-child(4){
     margin-top: 100px;
+}
+@media screen and (max-width:1785px){
+    #portfolio-galery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img1 img2 " "img3 img4 " "img5 img6 ";
+    }
+    .about-us-section2 button {
+        position: static;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1150px){
+    .our-services{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "head head"
+        "website-ui re-design "
+        "application-ui mobile-app-ui"
+        " web-app-ui web-elements"
+        ;  
+    }
+}
+@media screen and (max-width:1000px){
+    .nav-background{
+        order: -1;
+    }
+
+}
+@media screen and (max-width:720px){
+    .heading {
+        margin-left: 5%;
+    }
+    .side-by-side-left p {
+        margin-left: 5%;
+    }
+    .header-nav ul {
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .nav-background {
+        flex-basis: 100%;
+    }
+    .login{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:360px){
+    .our-services{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "head"
+        "website-ui "
+        "re-design"
+        "application-ui"
+        "mobile-app-ui"
+        " web-app-ui "
+        "web-elements"
+        ;  
+    }
+    .our-blog-content div{
+        margin: 100px 0px;
+        width: 360px;
+        overflow: hidden;
+    }
+    .procedure-list {
+        grid-template-columns: 1fr;
+    }
+    .procedure-list > div:nth-child(1) {
+        grid-column: 1 / 2;
+        padding: 0 30px;
+    }
+    .side-by-side-left{
+        padding-left: 10%;
+    }
+    .wave-btn-position {
+        margin-left: 13%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #portfolio-menu{
+        padding-left: 5%;
+    }
+    .about-us-section2 button{
+        position: relative;
+        right: 50px;
+    }
 }

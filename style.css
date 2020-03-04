@@ -686,7 +686,7 @@ footer div:nth-child(n+1) h2{
         margin-left: 0%;
     }
 }
-@media screen and (max-width:420px){
+@media screen and (max-width:500px){
     .our-services{
         grid-template-columns: 1fr;
         grid-template-areas:

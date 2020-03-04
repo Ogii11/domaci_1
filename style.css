@@ -472,6 +472,9 @@ header{
     background-color: #f8f8f8;
     flex-wrap: wrap;
 }
+/*.our-workflow > div{
+    max-width: 100%;
+}*/
 .procedure-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -687,6 +690,9 @@ footer div:nth-child(n+1) h2{
     }
 }
 @media screen and (max-width:500px){
+    .about-us-section2 button {
+        width: 230px;
+    }
     .our-services{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -721,9 +727,5 @@ footer div:nth-child(n+1) h2{
     }
     #portfolio-menu{
         padding-left: 5%;
-    }
-    .about-us-section2 button{
-        position: relative;
-        right: 50px;
     }
 }

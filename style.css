@@ -64,8 +64,9 @@ header{
     box-shadow: 0px 5px 50px -5px #ff8923;
 }
 .login span{
-    vertical-align: middle;
-    padding-top: 23%;
+    position: relative;
+    top: 25px;
+}
 }
 .wave-btn{
     width: 204.8px;
@@ -300,6 +301,10 @@ header{
     width: 340px;
     height: 340px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .portfolio-2-box1 button{
     background-image: linear-gradient(135deg, #ad92fc,#6752f3);
@@ -315,15 +320,9 @@ header{
     width: 185px;
     height: 185px;
     border-radius: 45px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 38px;
     color: #ffffff;
     font-weight: bold;
-}
-.portfolio-2-box h3{
-    margin-top: 100px;
 }
 .about-us-container{
     background-image: url("./res/images/about-us-background.png");
@@ -472,8 +471,8 @@ header{
     background-color: #f8f8f8;
     flex-wrap: wrap;
 }
-.our-workflow > div{
-    max-width: 100%;
+.our-workflow > img{
+    max-width:100%;
 }
 .procedure-list{
     display: grid;
@@ -678,6 +677,10 @@ footer div:nth-child(n+1) h2{
     .side-by-side-left p {
         margin-left: 5%;
     }
+    .nav-background{
+        background-image: none;
+        background-color: #4333ee;
+    }
     .header-nav ul {
         flex-direction: column;
         padding-left: 0%;
@@ -692,6 +695,9 @@ footer div:nth-child(n+1) h2{
 @media screen and (max-width:500px){
     .about-us-section2 button {
         width: 230px;
+    }
+    .about-us-section2 p {
+        font-size: 29px;
     }
     .our-services{
         grid-template-columns: 1fr;
@@ -727,5 +733,11 @@ footer div:nth-child(n+1) h2{
     }
     #portfolio-menu{
         padding-left: 5%;
+    }
+    .heading{
+        font-size: 35px;
+    }
+    .logo{
+        margin-top: 50px;
     }
 }

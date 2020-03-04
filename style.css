@@ -472,9 +472,9 @@ header{
     background-color: #f8f8f8;
     flex-wrap: wrap;
 }
-/*.our-workflow > div{
+.our-workflow > div{
     max-width: 100%;
-}*/
+}
 .procedure-list{
     display: grid;
     grid-template-columns: 1fr 1fr;

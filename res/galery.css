@@ -4,6 +4,7 @@
 }
 html{
     margin: 0px;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0px;
@@ -14,9 +15,9 @@ a{
 }
 header{
     display: flex;
-    height: 400px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 .logo{
     flex-grow: 3;
@@ -80,10 +81,6 @@ header{
 img{
     width: 100%;
 }
-
-
-
-
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -132,4 +129,22 @@ footer div:nth-child(n+1) h2{
 }
 .fpart-1 p:nth-child(4){
     margin-top: 100px;
+}
+#menu label{
+    display: none;
+}
+#menu input{
+    display: none;
+}
+@media screen and (max-width:720px){
+    .nav-background{
+        background-image: none;
+        background-color: #4333ee;
+        flex-basis: 100%;
+        display: none;
+        order: -1;
+    }
+    #menu label{
+        display: block;
+    }
 }

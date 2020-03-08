@@ -5,6 +5,8 @@ var portfolioPhoto1 = "./res/images/portfolio-1.png",
     portfolioPhoto5 = "./res/images/portfolio-5.png",
     portfolioPhoto6 = "./res/images/portfolio-6.png";
 
+var menu = document.getElementsByClassName("nav-background")[0];
+
 function classRemover() {
     var listOfButtons = document.getElementsByClassName("portfolio-menu-btn","selected-portfolio-btn");
     for (var i = 0;i<5;i++) {
@@ -74,4 +76,21 @@ function portfolioPhotos(y){
         document.getElementById("portfolio-galery").style.gridTemplateAreas = '"img1 "';
     }
 }
+
+function menuChanger(x){
+    if(x.checked){
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+window.addEventListener('resize',menuBack)
+function menuBack(){
+    if(window.innerWidth > 720){
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+
 portfolioPhotos(document.getElementsByClassName("selected-portfolio-btn")[0]);

@@ -13,11 +13,21 @@ a{
     color: #ffffff;
     text-decoration: none;
 }
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#menu label{
+    display: none;
+}
+#menu input{
+    display: none;
+}
 header{
     display: flex;
-    height: 400px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 .logo{
     flex-grow: 3;
@@ -40,6 +50,7 @@ header{
     background-image: url("./res/images/background header.png");
     background-repeat: no-repeat;
     flex-grow: 5;
+    height: 400px;
 }
 .header-nav ul{
     margin-top: 4%;
@@ -83,26 +94,19 @@ header{
     font-family: Poppins;
 }
 .wave-btn-position{
-    margin-left: 31%;
-    margin-right: 0px;
-    margin-top: 70px;
+    text-align: center;
+    margin-top: 50px;
 }
 #home_1{
     display: flex;
     flex-wrap: wrap;
-}
-.side-by-side-left{
-    flex: 2;
-}
-.side-by-side-right{
-    flex-grow: 1;
+    justify-content: space-around;
 }
 .heading{
     color: #534d4d;
     font-family: Lato;
     font-size: 68px;
     font-weight: 700;
-    margin-left: 20%;
 }
 .side-by-side-right img{
     scale: 0.8;
@@ -113,7 +117,6 @@ header{
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
-    margin-left: 20%;
 }
                         /* Our services*/
 #our-services{
@@ -129,7 +132,6 @@ header{
     ". mobile-app-ui web-app-ui web-elements ."
     ;
     background-color: #fbfcfd;
-    padding-bottom: 100px;
 }
 .service-box{
     width: 100%;
@@ -214,8 +216,6 @@ header{
 }
 #fill-1{
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
     flex-wrap: wrap;
 }
 #fill-1 div:nth-child(1) img{
@@ -232,16 +232,13 @@ header{
 }
 #portfolio{
     display: flex;
-    /*justify-content: center;*/
+    justify-content: space-around;
     background-color: #f8f8f8;
-    padding-top: 200px;
-    padding-bottom: 200px;
     flex-wrap: wrap;
 }
 #portfolio-menu{
     display: flex;
     flex-direction: column;
-    padding-left: 18%;
 }
 #portfolio-galery{
     display: grid;
@@ -281,7 +278,8 @@ header{
 #portfolio-2{
     display: flex;
     flex-direction: column;
-    padding: 200px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .portfolio-2-head{
     grid-area: head;
@@ -329,8 +327,6 @@ header{
 #about-us-container{
     background-image: url("./res/images/about-us-background.png");
     background-repeat: no-repeat;
-    padding-top: 125px;
-    padding-bottom: 130px;
     background-size: cover;
 }
 .about-us{
@@ -420,7 +416,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 135px 0 95px 0;
 }
 .fill-2-box{
     position: relative;
@@ -469,7 +464,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 100px 0;
     background-color: #f8f8f8;
     flex-wrap: wrap;
 }
@@ -536,8 +530,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .our-blog-head{
     text-align: center;
@@ -600,7 +592,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 100px 0;
     background-color: #000000;
     color: #ffffff;
 }
@@ -656,7 +647,7 @@ footer div:nth-child(n+1) h2{
     }
 }
 @media screen and (max-width:1150px){
-    .our-services{
+    #our-services{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "head head"
@@ -666,32 +657,34 @@ footer div:nth-child(n+1) h2{
         ;  
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1030px){
     .nav-background{
         order: -1;
+        height: 188px;
+    }
+    section{
+        padding-bottom: 75px;
+        padding-top: 75px;
     }
 
 }
 @media screen and (max-width:720px){
-    .heading {
-        margin-left: 5%;
-    }
-    .side-by-side-left p {
-        margin-left: 5%;
-    }
     .nav-background{
         background-image: none;
         background-color: #4333ee;
+        flex-basis: 100%;
+        display: none;
+        height: 350px;
     }
     .header-nav ul {
         flex-direction: column;
         padding-left: 0%;
     }
-    .nav-background {
-        flex-basis: 100%;
-    }
     .login{
         margin-left: 0%;
+    }
+    #menu label{
+        display: block;
     }
 }
 @media screen and (max-width:500px){
@@ -701,7 +694,7 @@ footer div:nth-child(n+1) h2{
     .about-us-section2 p {
         font-size: 29px;
     }
-    .our-services{
+    #our-services{
         grid-template-columns: 1fr;
         grid-template-areas:
         "head"
@@ -725,21 +718,20 @@ footer div:nth-child(n+1) h2{
         grid-column: 1 / 2;
         padding: 0 30px;
     }
-    .side-by-side-left{
-        padding-left: 10%;
-    }
     .wave-btn-position {
-        margin-left: 13%;
-        margin-top: 50px;
         margin-bottom: 50px;
-    }
-    #portfolio-menu{
-        padding-left: 5%;
     }
     .heading{
         font-size: 35px;
     }
     .logo{
         margin-top: 50px;
+    }
+    section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .side-by-side-left{
+        text-align: center;
     }
 }

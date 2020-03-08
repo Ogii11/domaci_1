@@ -9,14 +9,19 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-    <header>  
+    <header>
+        <div id="menu">
+            <label for="menu-cb"><i class="fa-2x fas fa-bars"></i></label>
+            <input type="checkbox" name="menu" id="menu-cb" onclick="menuChanger(this)">
+        </div>  
         <div class="logo">
             <h3><span>Web</span> UiExpert</h3>
         </div>
         <div class="nav-background">
             <nav class="header-nav">
                 <ul>
-                    <li><a href="../index.html">HOME</a></li>                   
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#footer">ABOUT US</a></li>                   
                     <li>
                         <button class="login">
                                 LOG IN
@@ -56,7 +61,7 @@
             </a>
         </div>
     </section>
-    <footer> 
+    <footer id="footer"> 
         <div class="fpart-1">
             <h2>
                 <span>Web </span>UiExpert
@@ -113,5 +118,6 @@
             </a>
         </div>
     </footer>
+    <script src="galery.js"></script>
 </body>
 </html>

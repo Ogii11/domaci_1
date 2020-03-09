@@ -17,7 +17,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 .logo{
     flex-grow: 3;

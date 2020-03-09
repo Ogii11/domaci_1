@@ -93,4 +93,30 @@ function menuBack(){
     }
 }
 
+let header = document.getElementsByTagName("header")[0];
+let navMenu = header.lastElementChild;
+
+window.addEventListener('scroll',headerColor);
+function headerColor(){
+    if (window.innerWidth > 720) {
+        if(window.scrollY > 300){
+            for (let i = 0; i < 5; i++) {
+                navMenu.firstElementChild.firstElementChild.children[i].firstElementChild.classList.add("scrolled-text");
+            }
+            header.classList.add("scrolled");
+            navMenu.classList.remove("nav-background");
+            navMenu.classList.add("nav-background-scrolled");
+    
+        } else {
+            for (let i = 0; i < 5; i++) {
+                navMenu.firstElementChild.firstElementChild.children[i].firstElementChild.classList.remove("scrolled-text");
+            }
+            header.classList.remove("scrolled");
+            navMenu.classList.add("nav-background");
+            navMenu.classList.remove("nav-background-scrolled");
+    
+        }
+    }
+}
 portfolioPhotos(document.getElementsByClassName("selected-portfolio-btn")[0]);
+headerColor();

@@ -48,7 +48,13 @@ header{
     align-items: baseline;
     transition: 1s;
 }
+@keyframes logo-animation {
+    50%{
+        transform: skew(40deg, 10deg);
+    }
+}
 .logo{
+    animation: logo-animation 1s ;
     flex-grow: 3;
     text-align: center;
 }
